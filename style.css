@@ -1,13 +1,13 @@
 :root {
-    --primary-color: rgb(13, 183, 221); /* Default blue shade */
+    --primary-color: rgb(13, 183, 221); 
     --background-color: black;
     --text-color: white;
-    --secondary-background: rgba(31, 29, 29, 0.833); /* New variable for rgba(31, 29, 29, 0.833) */
+    --secondary-background: rgba(31, 29, 29, 0.833); 
 }
 [data-theme="light"] {
     --background-color: white;
     --text-color: black;
-    --secondary-background: rgb(249, 246, 230); /* Updated color for light theme */
+    --secondary-background: rgb(249, 246, 230); 
 }
 html {
     scroll-behavior: smooth;
@@ -31,7 +31,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     height: 70px;
     box-shadow: var(--primary-color) 0.5px 5px 20px;
 }
@@ -90,7 +90,7 @@ nav ul li a:hover::after {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 10px;
@@ -116,7 +116,7 @@ nav ul li a:hover::after {
 .color-option.default { background-color: rgb(13, 183, 221); }
 .color-option.pink { background-color: pink; }
 .color-option.violet { background-color: violet; }
-.color-option.pastel-green { background-color: #77dd77; } /* Pastel green */
+.color-option.pastel-green { background-color: #77dd77; } 
 .theme-toggle {
     font-size: 1.5rem;
     cursor: pointer;
@@ -182,7 +182,7 @@ hr {
     margin-top: 20px;
 }
 .box1, .box2, .box3 {
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--primary-color);
@@ -235,7 +235,7 @@ hr {
 .skill-circle {
     width: 100px;
     height: 100px;
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -290,7 +290,7 @@ hr {
     margin-top: 20px;
 }
 .fourth .box1, .fourth .box2, .fourth .box3 {
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--primary-color);
@@ -351,7 +351,7 @@ hr {
     flex-wrap: wrap;
 }
 .fifth .box1, .fifth .box2, .fifth .box3 {
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--primary-color);
@@ -402,7 +402,7 @@ hr {
     width: 100%;
 }
 .resume-container {
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--primary-color);
@@ -470,7 +470,7 @@ hr {
     justify-content: space-between;
     gap: 40px;
     margin-top: 20px;
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--primary-color);
@@ -510,13 +510,6 @@ hr {
 .social-links a:hover {
     color: var(--primary-color);
 }
-.contact-details p a.email-link {
-    color: var(--text-color); 
-    text-decoration: none; 
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
-}
 .contact-form {
     flex: 1;
     text-align: left;
@@ -534,7 +527,7 @@ hr {
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: rgba(0, 0, 0, 0.7); /* Black placeholder text in light theme */
+    color: rgba(0, 0, 0, 0.7); 
 }
 .contact-form button {
     background-color: var(--primary-color);
@@ -552,7 +545,7 @@ hr {
     transform: translateY(-5px);
 }
 footer {
-    background-color: var(--secondary-background); /* Updated to use CSS variable */
+    background-color: var(--secondary-background); 
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 -4px 8px var(--primary-color);
@@ -583,4 +576,178 @@ footer .social-links a {
 }
 footer .social-links a:hover {
     color: var(--primary-color);
+}
+.contact-details p a.email-link {
+color: var(--text-color); 
+text-decoration: none; 
+display: flex;
+align-items: center; 
+gap: 10px; 
+}
+@media (max-width: 1200px) {
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftsection {
+        font-size: 2.5rem;
+        margin: 20px 0;
+    }
+    .rightsection img {
+        width: 60%;
+        margin: 20px 0;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box1, .box2, .box3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .skills-container {
+        gap: 20px;
+    }
+    .skill-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .skill-circle i {
+        font-size: 1.5rem;
+    }
+    .skill-circle p {
+        font-size: 0.9rem;
+    }
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .left {
+        font-size: 1.5rem;
+    }
+    .leftsection {
+        font-size: 2rem;
+    }
+    .rightsection img {
+        width: 80%;
+    }
+    .second h1, .third h1, .fourth h1, .fifth h1, .sixth h1, .seventh h1 {
+        font-size: 1.2rem;
+    }
+    .box1, .box2, .box3 {
+        width: 90%;
+    }
+    .skills-container {
+        gap: 15px;
+    }
+    .skill-circle {
+        width: 70px;
+        height: 70px;
+    }
+    .skill-circle i {
+        font-size: 1.2rem;
+    }
+    .skill-circle p {
+        font-size: 0.8rem;
+    }
+    .contact-container {
+        padding: 20px;
+    }
+    .contact-details h2 {
+        font-size: 1.2rem;
+    }
+    .contact-details p {
+        font-size: 0.9rem;
+    }
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+    }
+    .contact-form button {
+        padding: 8px 16px;
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 480px) {
+    .leftsection {
+        font-size: 1.8rem;
+    }
+    .rightsection img {
+        width: 90%;
+    }
+    .second h1, .third h1, .fourth h1, .fifth h1, .sixth h1, .seventh h1 {
+        font-size: 1rem;
+    }
+    .box1, .box2, .box3 {
+        width: 100%;
+    }
+    .skills-container {
+        gap: 10px;
+    }
+    .skill-circle {
+        width: 60px;
+        height: 60px;
+    }
+    .skill-circle i {
+        font-size: 1rem;
+    }
+    .skill-circle p {
+        font-size: 0.7rem;
+    }
+    .contact-container {
+        padding: 15px;
+    }
+    .contact-details h2 {
+        font-size: 1rem;
+    }
+    .contact-details p {
+        font-size: 0.8rem;
+    }
+    .contact-form input, .contact-form textarea {
+        padding: 6px;
+    }
+    .contact-form button {
+        padding: 6px 12px;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    .right ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .right ul.active {
+        display: flex;
+    }
 }

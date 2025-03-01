@@ -45,3 +45,16 @@ function sendEmail() {
     alert('Email sent successfully!');
     window.location.href = mailtoLink;
 }
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+    }
+    const navToggle = document.createElement('div');
+    navToggle.classList.add('nav-toggle');
+    navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    document.querySelector('nav').appendChild(navToggle);
+
+    navToggle.addEventListener('click', () => {
+        const navLinks = document.querySelector('.right ul');
+        navLinks.classList.toggle('active');
+    });

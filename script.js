@@ -58,7 +58,7 @@ var typed = new Typed('#element', {
                 }
 
                 const subject = `Message from ${name}`;
-                const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+                const body = `Name: ${name} /n Email: ${email} /n Message: ${message}`;
                 const mailtoLink = `mailto:gauranggupta02@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
                 window.location.href = mailtoLink;
                 alert('Email sent successfully!');
